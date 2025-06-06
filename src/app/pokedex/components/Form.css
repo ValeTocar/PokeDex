@@ -1,0 +1,42 @@
+.form {
+	width: 100%;
+	height: 200px;
+	padding-block: 3em;
+	background-image: url(/public/img/poke.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #ccc;
+}
+
+.form_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.form_input,
+.form_select {
+	background-color: rgb(255, 245, 245);
+	color: rgb(0, 0, 0);
+	border-color: black;
+	&:hover {
+		border-color: brown;
+		background-color: rgba(152, 140, 140, 0.437);
+		color: rgb(255, 246, 246);
+	}
+}
+.form_select {
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+	.form_container {
+	margin-top: 100px;
+		gap: 0.5em;
+	}
+	.form_input,
+	.form_select {
+		width: 100%;
+	}
+	
+}
