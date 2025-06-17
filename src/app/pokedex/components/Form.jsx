@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { defaulTypesEs } from '../../../lib/utils';
 import './Form.css';
+import { Link } from 'react-router';
 
 function Form({ value, onSearch, type, onType, stock, onFiltered }) {
 	useEffect(() => {
@@ -16,7 +17,19 @@ function Form({ value, onSearch, type, onType, stock, onFiltered }) {
 	}, [type, stock]);
 
 	return (
+		<>
 		<div className="form">
+		</div>
+			<div className="link__container">
+				<Link className="link__return" to="/">
+					<h3 className="link__text">
+Ir al Home
+					</h3>
+					
+				</Link>
+			</div>
+		<div className='form__center'>
+
 			<div className="form_container">
 				<input
 					type="text"
@@ -40,6 +53,8 @@ function Form({ value, onSearch, type, onType, stock, onFiltered }) {
 				</select>
 			</div>
 		</div>
+		
+		</>
 	);
 }
 

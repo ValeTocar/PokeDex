@@ -35,6 +35,7 @@ function Pokedex() {
 
 	return (
 		<div className="pokedex">
+		
 			<Form
 				stock={pokemons}
 				value={search}
@@ -43,14 +44,6 @@ function Pokedex() {
 				onSearch={setSearch}
 				onFiltered={setTypeFiltered}
 			/>
-			<div className="link__container">
-				<Link className="link__return" to="/">
-					<h3 className="link__text">
-Ir al Home
-					</h3>
-					
-				</Link>
-			</div>
 			<p className="info__name">
 				Hola entrenador {state.name}, aqui encontraras tus pokémones favoritos
 			</p>
