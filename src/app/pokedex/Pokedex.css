@@ -20,16 +20,7 @@
 		background-color: #ac0000;
 	}
 }
-.link__text{
-	color: #000;
-	font-size: var(--text-sm);
-	font-weight:bold;
-	text-decoration: none;
-	padding: 0.5em 2.5em;
-	overflow: hidden;
-	margin: 5px;
-	padding: 0.5em 2.5em;
-}
+
 .pokedex {
 	background-image: url(/public/img/bgpoke.png);
 	background-size: cover;
@@ -41,12 +32,6 @@
 
 }
 
-.link__return {
-	color: #221f1f;
-	&:hover {
-		color: #ffffffb7;
-	}
-}
 .info__name {
 	width: fit-content;
 	margin: auto;
