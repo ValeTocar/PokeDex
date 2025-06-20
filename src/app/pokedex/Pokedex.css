@@ -50,7 +50,7 @@
 .info__name {
 	width: fit-content;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 	padding: 15px 15px;
 	background-color: #f82e2e;
@@ -69,10 +69,18 @@
 .pokedex__footer {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	border: 1px solid #000;
+	border-top: 1px solid #000;
 	height: 200px;
 	background-color: #3f3838;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+}
+@media screen and (max-width: 768px) {
+.info__name{
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+	
 }
